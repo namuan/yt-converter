@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="inner cover">
+                <form id="ytform" class="form-horizontal" action="/yt" title="" method="post">
+                    <h3>Youtube Video</h3>
+                    <input class="form-control" type="text" id="videoUrl" name="videoUrl" title="videoUrl">
+                    <br>
+                    <button class="btn btn-primary" type="submit" id="submitButton" name="submitButton">Submit</button>
+                </form>
+
+                <div style="display: none;" id="spinner">
+                    <img src="spinner.gif">
+                    <p>Do not close this window</p>
+                </div>
+                <p id="videoLinkContainer" class="lead" style="display: none;"><a id="videoName" href="#">Right click and save as...</a></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+v2
+* Background processing and Job based Api
+* Add playlist support
